@@ -1,0 +1,75 @@
+#banner{
+    position:relative;
+}
+body{
+    padding:0px;
+    margin: 0px;
+}
+canvas{
+    border:1px solid black;
+    height:100vh;
+    width:100%;
+    background-color: black;
+}
+
+#main-head{
+    position:absolute;
+    text-transform: uppercase;
+    z-index: 100;
+    font-size: 6em;
+    color: greenyellow;
+    font-family: sans-serif;
+    top:30%;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+#main-head span{
+    transition: 0.5s;
+}
+
+#main-head:hover span:nth-child(1){
+    margin-right: 10px;
+}
+
+#main-head:hover span:nth-child(1):after{
+    content: "'";
+
+}
+h#main-head2:hover span:nth-child(2){
+    margin-left: 40px;
+}
+
+#main-head:hover span{
+    color:#fff;
+        text-shadow:    0 0 10px #fff,
+                        0 0 20px #fff,
+                        0 0 160px #fff,
+                        0 0 190px #fff,
+                        0 0 220px #fff,
+                        0 0 550px #fff;
+
+}
+
+#createdDiv{
+    position: absolute;
+    right: 10px;
+    bottom: 2%;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 3px 8px;
+    border-radius:50px;
+}
+
+#created {
+    background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjF9');
+}
+
+
